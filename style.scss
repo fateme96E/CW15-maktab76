@@ -15,6 +15,17 @@ body {
     background-color: aquamarine;
     width: 450px;
     height: 200px;
+    input{
+        box-sizing: border-box;
+        width: 450px;
+        height: 200px;
+        background-color: transparent;
+        border: unset;
+        padding: 20px;
+        font-size: 35px;
+        color: rgb(109, 109, 109);
+        
+    }
 }
 
 .buttons {

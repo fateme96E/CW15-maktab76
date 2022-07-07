@@ -10,41 +10,46 @@
 <body>
     <div class="calculater-container">
         <div class="display">
+            <input type="text" id="result"  dir="rtl">
 
         </div>
+        <form action="">
         <div class="buttons">
             <div class="title-container">
-                <div class="circle"> C</div>
+                <input class="circle" name="clear" onclick="deleteCal()" dir="rtl">C</input>
                 <h2>JavaScript Calculater</p>
             </div>
-            <input class="numbers rounded-btn" value="7"></input>
-            <input class="numbers rounded-btn" value="8"></input>
-            <input class="numbers rounded-btn" value="9"></input>
-            <input class="opeartors rounded-btn" value="+"></input>
-            <input class="opeartors rounded-btn" value="|X|"></input>
-            <input class="opeartors rounded-btn" value="ce"></input><br>
-            <input class="numbers rounded-btn" value="4"></input>
-            <input class="numbers rounded-btn" value="5"></input>
-            <input class="numbers rounded-btn" value="6"></input>
-            <input class="opeartors rounded-btn" value="-"></input>
-            <input class="opeartors rounded-btn" value="&radic;"></input>
-            <input class="opeartors rounded-btn" value="fl"></input><br>
-            <input class="numbers rounded-btn" value="1"></input>
-            <input class="numbers rounded-btn" value="2"></input>
-            <input class="numbers rounded-btn" value="3"></input>
-            <input class="opeartors rounded-btn" value="*"></input>
-            <input class="opeartors rounded-btn" value="r"></input>
-            <input class="opeartors rounded-btn" value="^"></input><br>
-            <input class="numbers rounded-btn" value="0"></input>
-            <input class="opeartors rounded-btn" value="."></input>
-            <input class="opeartors rounded-btn" value="/"></input>
-            <input class="opeartors rounded-btn" value="="></input>
+           
+                <input class="numbers rounded-btn" value="7" name="b7" onclick="addToCal(b7.value)"></input>
+                <input class="numbers rounded-btn" value="8" name="b8" onclick="addToCal(b8.value)"></input>
+                <input class="numbers rounded-btn" value="9" name="b9" onclick="addToCal(b9.value)"></input>
+                <input class="opeartors rounded-btn" value="+" name="plus" onclick="addToCal(plus.value)"></input>
+                <input class="opeartors rounded-btn" value="|X|"></input>
+                <input class="opeartors rounded-btn" value="ce"></input><br>
+                <input class="numbers rounded-btn" value="4" name="b4" onclick="addToCal(b4.value)"></input>
+                <input class="numbers rounded-btn" value="5" name="b5" onclick="addToCal(b5.value)"></input>
+                <input class="numbers rounded-btn" value="6" name="b6" onclick="addToCal(b6.value)"></input>
+                <input class="opeartors rounded-btn" value="-" name="min" onclick="addToCal(min.value)"></input>
+                <input class="opeartors rounded-btn" value="&radic;"></input>
+                <input class="opeartors rounded-btn" value="fl"></input><br>
+                <input class="numbers rounded-btn" value="1" name="b1" onclick="addToCal(b1.value)"></input>
+                <input class="numbers rounded-btn" value="2" name="b2" onclick="addToCal(b2.value)"></input>
+                <input class="numbers rounded-btn" value="3" name="b3" onclick="addToCal(b3.value)"></input>
+                <input class="opeartors rounded-btn" value="*" name="pro" onclick="addToCal(pro.value)"></input>
+                <input class="opeartors rounded-btn" value="r"></input>
+                <input class="opeartors rounded-btn" value="^"></input><br>
+                <input class="numbers rounded-btn" value="0" name="b0" onclick="addToCal(b0.value)"></input>
+                <input class="opeartors rounded-btn" value="."></input>
+                <input class="opeartors rounded-btn" value="/" name="dev" onclick="addToCal(dev.value)"></input>
+                <input class="opeartors rounded-btn" value="=" onclick="final()"></input>
+         
+           
 
 
             
         </div>
+       </form>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="/app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
