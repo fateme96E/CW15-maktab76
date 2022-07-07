@@ -15,6 +15,8 @@ body {
     background-color: aquamarine;
     width: 450px;
     height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     input{
         box-sizing: border-box;
         width: 450px;
@@ -23,8 +25,7 @@ body {
         border: unset;
         padding: 20px;
         font-size: 35px;
-        color: rgb(109, 109, 109);
-        
+        color: rgb(109, 109, 109);  
     }
 }
 
@@ -42,19 +43,17 @@ body {
     font-size: 34px;
     color: rgb(88, 88, 88);
     font-weight: bold;
-    margin: 3px;
+    margin: 4px 0 0 9px;
     text-align: center;
     cursor: pointer;
+    &:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
 }
 
 .rounded-btn:last-child {
     background-color: rgb(33, 227, 33);
     color: #ffffff;
-}
-
-.rounded-btn:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
 }
 
 .circle {
@@ -64,12 +63,13 @@ body {
     height: 72px;
     border: none;
     font-size: 34px;
+    margin: 10px;
     color: #ffffff;
     font-weight: bold;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    cursor: pointer;
+    &:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
 }
 
 .title-container {
